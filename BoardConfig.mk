@@ -58,6 +58,10 @@ TARGET_KERNEL_CONFIG := lineageos_jalebi_defconfig
 # Power
 TARGET_HAS_NO_POWER_STATS := true
 
+# Lights
+#BOARD_LIGHTS_VARIANT := aw2013
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
