@@ -70,6 +70,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 #BOARD_LIGHTS_VARIANT := aw2013
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Power
+TARGET_PROVIDES_POWERHAL := true
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
