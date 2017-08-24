@@ -189,7 +189,7 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>28</item>
+		<item>20</item>
         <item>10</item>
     </integer-array>
 
