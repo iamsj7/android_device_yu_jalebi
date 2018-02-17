@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on init
+    export LD_SHIM_LIBS "/system/lib/libfacenet.so|libprotobuf-cpp-haxx.so"
+
 on boot
 
     # Torch
