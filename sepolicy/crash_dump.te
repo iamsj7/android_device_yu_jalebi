@@ -1,0 +1,1 @@
+allow crash_dump self:capability dac_override;
