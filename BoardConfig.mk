@@ -22,6 +22,9 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/yu/jalebi
 
+# Audio
+AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
