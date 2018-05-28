@@ -42,7 +42,8 @@ persist.data.iwlan.enable=true
 persist.dbg.wfc_avail_ovr=1
 
 # Perf
-ro.sys.fw.dex2oat_thread_count=4
+ro.sys.fw.dex2oat_thread_count=2
+sys.use_fifo_ui=1
 
 # Radio
 persist.radio.multisim.config=dsds
