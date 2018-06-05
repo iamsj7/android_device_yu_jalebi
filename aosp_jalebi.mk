@@ -21,6 +21,10 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
+# Inherit common Android Go configurations
+#$(call inherit-product, build/target/product/go_defaults.mk)
+#IS_GO_VERSION := true
+
 PRODUCT_NAME := aosp_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
