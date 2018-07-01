@@ -1487,7 +1487,6 @@ uint8_t get_num_of_cameras()
 {
     int try_max = 0;
     int rc = 0;
-    int i = 0;
     int dev_fd = 0;
     struct media_device_info mdev_info;
     int num_media_devices = 0;
