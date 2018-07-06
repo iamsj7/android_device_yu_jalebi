@@ -16,7 +16,7 @@
 $(call inherit-product, device/yu/jalebi/full_jalebi.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
@@ -25,11 +25,9 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 #$(call inherit-product, build/target/product/go_defaults.mk)
 #IS_GO_VERSION := true
 
-PRODUCT_NAME := aosp_jalebi
+PRODUCT_NAME := lineage_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
-TARGET_BOOT_ANIMATION_RES := 720
-EXTENDED_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
