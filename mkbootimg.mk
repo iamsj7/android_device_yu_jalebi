@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 ## Build and run dtbtool
 DTBTOOL := $(HOST_OUT_EXECUTABLES)/dtbToolCM$(HOST_EXECUTABLE_SUFFIX)
-INSTALLED_DTIMAGE_TARGET := device/lenovo/a6000/dt.img
+INSTALLED_DTIMAGE_TARGET := device/yu/jalebi/dt.img
 
 ifneq ($(TARGET_KERNEL_ARCH),)
 KERNEL_ARCH := $(TARGET_KERNEL_ARCH)

@@ -23,6 +23,6 @@
 # components.
 
 FORCE_32_BIT := true
-DEVICE_PATH := device/lenovo/a6000
+DEVICE_PATH := device/yu/jalebi
 
-include device/lenovo/a6000/board/*.mk
+include device/yu/jalebi/board/*.mk

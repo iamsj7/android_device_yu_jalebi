@@ -1,4 +1,5 @@
 # TWRP RECOVERY SPECIFIC FLAG
+TARGET_TWRP_FSTAB := $(DEVICE_PATH)/twrp.fstab
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
