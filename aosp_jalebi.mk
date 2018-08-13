@@ -32,3 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=YUNIQUE
 
 BUILD_FINGERPRINT= google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    device/yu/jalebi/prebuilt/bootanimation.zip:system/media/bootanimation.zip
