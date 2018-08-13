@@ -38,3 +38,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=YUNIQUE
 
 BUILD_FINGERPRINT := YU/YU4711/YU4711:5.1.1/LMY47V/1450865915:user/release-keys
+
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    device/yu/jalebi/prebuilt/bootanimation.zip:system/media/bootanimation.zip
