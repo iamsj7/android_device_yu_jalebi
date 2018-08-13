@@ -20,6 +20,9 @@ FORCE_32_BIT := true
 # Inherit from msm8916-common
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+ALLOW_MISSING_DEPENDENCIES := true
+
 DEVICE_PATH := device/yu/jalebi
 
 # Audio
@@ -50,7 +53,7 @@ USE_DEVICE_SPECIFIC_GPS := true
 
 # HAL
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8916
-TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8916
+#TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8916
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8916
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8916
 
