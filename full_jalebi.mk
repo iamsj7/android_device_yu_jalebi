@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/yu/jalebi/device.mk)
 
 # Add APN(s)
-PRODUCT_COPY_FILES += device/yu/jalebi/prebuilt/apns-conf.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES += device/yu/jalebi/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := jalebi
