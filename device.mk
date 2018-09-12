@@ -64,10 +64,6 @@ PRODUCT_PACKAGES += \
     pp_calib_data_nt35521_dijing_4p7inch_hd_video_panel.xml \
     svi_config.xml
 
-# Doze mode
- PRODUCT_PACKAGES += \
-     YUDoze
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
