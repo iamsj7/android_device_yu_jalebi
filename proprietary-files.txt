@@ -217,16 +217,16 @@ bin/time_daemon:vendor/bin/time_daemon
 vendor/lib/libTimeService.so
 
 # IMS
--vendor/framework/imscmlibrary.jar
+-framework/imscmlibrary.jar
 -vendor/app/ims/ims.apk
 -vendor/app/imssettings/imssettings.apk
-vendor/bin/ims_rtp_daemon
-vendor/bin/imscmservice
-vendor/bin/imsdatadaemon
-vendor/bin/imsqmidaemon
-vendor/etc/permissions/ims.xml
-vendor/etc/permissions/imscm.xml
-vendor/etc/permissions/qti_permissions.xml
+bin/ims_rtp_daemon
+bin/imscmservice
+bin/imsdatadaemon
+bin/imsqmidaemon
+etc/permissions/ims.xml
+etc/permissions/imscm.xml
+etc/permissions/qti_permissions.xml
 vendor/lib/librcc.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-ims-rcscmjni.so
