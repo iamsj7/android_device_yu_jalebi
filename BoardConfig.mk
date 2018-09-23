@@ -28,6 +28,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Camera
 BOARD_CAMERA_SENSORS := ov8865_qtech_baly_6c gc2355_blx_ffln_78
 USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+	/system/bin/mediaserver=22 \
+        /system/bin/cameraserver=22 \
+	/system/vendor/bin/mm-qcamera-daemon=22
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
