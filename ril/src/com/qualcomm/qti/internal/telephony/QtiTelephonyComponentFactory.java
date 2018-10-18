@@ -23,18 +23,18 @@ import com.android.internal.telephony.CommandsInterface;
 import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.TelephonyComponentFactory;
 
-import com.qualcomm.qti.internal.telephony.ExtTelephony;
+import com.qualcomm.qti.internal.telephony.HwExtTelephony;
 
 public class QtiTelephonyComponentFactory extends TelephonyComponentFactory {
 
     @Override
     public void makeExtTelephonyClasses(Context context,
             Phone[] phones, CommandsInterface[] commandsInterfaces) {
-        Rlog.d(LOG_TAG, "makeExtTelephonyClasses");
+        Rlog.d(LOG_TAG, "makeHwExtTelephonyClasses");
         try {
-            ExtTelephony.init(context, phones, commandsInterfaces);
+            HwExtTelephony.init(context, phones, commandsInterfaces);
         } catch (NoClassDefFoundError e) {
-            Rlog.e(LOG_TAG, "Error creating ExtTelephony", e);
+            Rlog.e(LOG_TAG, "Error creating HwExtTelephony", e);
         }
     }
 }
