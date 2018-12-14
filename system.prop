@@ -13,7 +13,7 @@ config.svi.path=/system/etc/svi_config.xml
 config.svi.xml=1
 ro.qualcomm.cabl=0
 ro.qualcomm.svi=1
-ro.sf.lcd_density=320
+ro.sf.lcd_density=280
 
 # Factory reset protection
 ro.frp.pst=/dev/block/platform/soc.0/7824900.sdhci/by-name/frp
@@ -37,10 +37,6 @@ persist.volte_enabled_by_hw=1
 persist.dbg.vt_avail_ovr=1
 persist.data.iwlan.enable=true
 persist.dbg.wfc_avail_ovr=1
-
-# Perf
-ro.sys.fw.dex2oat_thread_count=2
-sys.use_fifo_ui=1
 
 # Radio
 persist.radio.multisim.config=dsds
