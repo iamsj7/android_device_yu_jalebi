@@ -18,13 +18,14 @@ $(call inherit-product, device/yu/jalebi/full_jalebi.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-# Inherit common Android Go configurations
-#$(call inherit-product, build/target/product/go_defaults.mk)
-#IS_GO_VERSION := true
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 PRODUCT_NAME := aosp_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
+TARGET_BOOT_ANIMATION_RES := 720
+EXTENDED_BUILD_TYPE := GO-OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
@@ -35,7 +36,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=YUNIQUE
 
 BUILD_FINGERPRINT := YU/YU4711/YU4711:5.1.1/LMY47V/1450865915:user/release-keys
-
-# Boot Animation
-PRODUCT_COPY_FILES += \
-    device/yu/jalebi/prebuilt/bootanimation.zip:system/media/bootanimation.zip
