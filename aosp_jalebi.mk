@@ -22,14 +22,13 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Inherit common Android Go configurations
-$(call inherit-product, build/target/product/go_defaults.mk)
+#$(call inherit-product, build/target/product/go_defaults.mk)
 #IS_GO_VERSION := true
 
 PRODUCT_NAME := aosp_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
 TARGET_BOOT_ANIMATION_RES := 720
-EXTENDED_BUILD_TYPE := GO-OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
