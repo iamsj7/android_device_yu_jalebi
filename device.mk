@@ -159,4 +159,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Call the proprietary setup
-$(call inherit-product, vendor/yu/jalebi/jalebi-vendor.mk)
+$(call inherit-product, vendor/yu/jalebi/jalebi-vendor.mk
