@@ -138,10 +138,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ums_adb=3010 \
     ro.usb.vid=2a96
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-01-01
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwcnss_qmi

@@ -87,5 +87,8 @@ endif
 # Wi-Fi
 TARGET_PROVIDES_WCNSS_QMI := true
 
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2016-01-01
+
 # Inherit from proprietary files
 include vendor/yu/jalebi/BoardConfigVendor.mk
