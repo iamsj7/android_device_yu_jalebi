@@ -162,9 +162,6 @@ static int requested_power_profile = -1;
         set_power_profile(*(int32_t *)data);
         pthread_mutex_unlock(&lock);
         break;
-    case POWER_HINT_LOW_POWER:
-        /* This hint is handled by the framework */
-        break;
     default:
         break;
     }
@@ -196,7 +193,7 @@ static int requested_power_profile = -1;
      dev->init = power_init;
     dev->powerHint = power_hint; // This is handled by framework
     dev->setInteractive = power_set_interactive;
-    dev->getFeature = get_feature;
+    dev->setFeature = get_feature;
      *device = (hw_device_t*)dev;
      ALOGD("%s: exit", __FUNCTION__);
      return 0;
@@ -217,5 +214,5 @@ static int requested_power_profile = -1;
      .init = power_init,
     .setInteractive = power_set_interactive,
     .powerHint = power_hint,
-    .getFeature = get_feature
+    .setFeature = get_feature
 };
