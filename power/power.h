@@ -18,7 +18,9 @@
     PROFILE_BALANCED,
     PROFILE_HIGH_PERFORMANCE,
     PROFILE_BIAS_POWER_SAVE,
-    PROFILE_MAX
+    PROFILE_MAX,
+    POWER_HINT_SET_PROFILE,
+    POWER_FEATURE_SUPPORTED_PROFILES
 };
  typedef struct governor_settings {
     int is_interactive;
